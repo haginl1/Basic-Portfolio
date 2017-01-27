@@ -1,0 +1,62 @@
+<!-- BEGIN CSS -->
+<style>
+
+    body {
+        background-color: brown;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        color: black;
+        
+    }
+
+    img {
+    border: 5px solid orange;
+    border-radius: 4px;
+    padding: 5px;
+    }
+
+    .styledFont {
+        font-size: 24px;
+        font-family: cursive;
+        color:green;
+    }
+
+    
+    .red {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .orange {
+        color: orange;
+    }
+
+    .big {
+        font-size: 36px;
+    }
+    
+    .tiny {
+        font-size: 4px;
+    }
+   
+   .important {
+        font-weight: bold;
+    } 
+    .creative {
+        font-style: italic;
+
+    
+</style> 
+<!-- END CSS -->
