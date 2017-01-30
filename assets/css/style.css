@@ -5,13 +5,119 @@
     }
 	/* link to background image for the page */
     body {
-        background: url(../images/skulls.png); 
+    	background: url(../images/skulls.png);
+    }
+
+    /* class that removes any anchor decoration such as blue underline for hyperlinks */
+	a {
+		text-decoration: none;
+	}
+
+    /* class that controls the paragraph text */
+    h1,h2,h3,h4,h5,h6 {
     	
+    	font-family: 'Georgia', Times, Times New Roman, serif;
+	}
+	
+	 /* class that controls paragraph text */
+    p, li, label {
+    	
+    	font-family: 'Arial','Helvetica Neue',Helvetica, sans-serif;
     }
-	/* headings control */
-    h1,h2,h3,{
-		font-family: 'Georgia', 'Times','Times New Roman', serif;
+
+    label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    color:#363636;
+	}
+
+	/* Style the text boxes */
+	input, textarea {
+		width:439px;
+		height:27px;
+		background:#efefef;
+		border:1px solid #dedede;
+		padding:10px;
+		margin-top:3px;
+		font-size: 1em;
+		color:#3a3a3a;
+		-moz-border-radius:5px;
+    	-webkit-border-radius:5px;
+    	border-radius:5px;
+	}
+
+	textarea {
+		height:213px;
+		background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+	}
+
+	input:focus, textarea:focus {
+    	border:1px solid #97d6eb;
+	}
+    
+    #submit {
+	    width:127px;
+	    height:38px;
+	    color:#4aaaa5;
+	    text-indent:-9999px;
+	    border:solid;
+	    margin-top:20px;
+	    cursor:pointer;
+	}
+
+	#submit:hover {
+	    opacity:.9;
+	}
+
+
+    /* class that controls unique paragraph text spacing and color */
+    .spacing{ 
+    	line-height: 1.5em;
+    	color: #252525;
     }
+
+	/* class that controls font in a logo panel */
+    .logofont { 
+
+		color: #ffffff;
+		text-align: center;
+		margin-top:20px;
+	}
+	
+	/* class that controls all headers color when Teal is needed */
+	.teal {
+
+		color: #4aaaa5;
+	}
+
+	/* class that controls the title of the containers */
+	.title{
+
+		padding-bottom:20px;
+		padding-top:20px;
+		margin-left: 20px;
+		margin-right:20px;
+		border-bottom: 3px solid #dddddd;
+	}
+	
+	/* class that controls all images as they encounter text */
+	.float-image{
+		
+		float: left; 
+		margin-right:20px; 
+		margin-bottom: 3px; 
+		border:solid #cccccc 1px; 
+		padding: 2px;
+	}
+	
+	/* class that controls social media images */
+	.social-icons{
+
+		width:40px;
+		height:40px;
+		
+		}
 	
 	/* class that controls the copyright text in the footer */
     .copyright {
@@ -20,150 +126,6 @@
     	font-size: .7em;
     	margin-top:20px;
     }
-	
-	/* class that controls font style in the logo container */
-    .logofont {
-    	
-    	margin-top:20px;
-    	color:#ffffff;
-    	text-align: center;
-    }
-
-    /* class that controls the paragraph text */
-    p {
-    	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-    }
-	/* class that controls the paragraph text in the main container*/
-    p.main{
-			margin-right: 5px; 
-			margin-left: 5px;
-			color:#666;
-			line-height: 1.5;
-
-    }
-	
-	/* class that removes any anchor decoration such as blue underline for hyperlinks */
-	a {
-	text-decoration: none;
-	}
-	/* class that controls images as they encounter text */
-	.float-image{
-		
-		float: left; 
-		margin-right:10px; 
-		margin-bottom: 3px; 
-		border:solid #cccccc 1px; 
-		padding: 2px;
-	}
-
-	.social-image{
-		float: left;
-		padding:10px;
-		width: 40px;
-		height: 40px
-	}
-
-	/* main and sidebar container headings font styling 'Lisa Hagin'*/ 
-
-	.title {
-        
-        color: #4aaaa5;
-        
-    	margin-top: 10px;
-    	margin-left: 10px;
-    	margin-right:10px;
-    	padding-top:20px;
-    	padding-bottom:20px;
-    	
-
-     }
-	
-	/* main header div area*/ 
-	#header{
-		width:100%;
-		height: 100px;
-		background-color: #ffffff;
-		border-bottom: 2px solid #cccccc;
-		
-		}
-
-	/* teal div area the .title font */ 
-	#logo{
-		background-color: #4aaaa5;
-		height:75px;
-		width:200px;
-		margin-left:80px;
-		float:left;
-		margin-top:25px;
-	}
-	
-	/* navigation div area for About |Portfolio | Contact */
-	#links{
-		border: thin;
-		float:right;
-		width: 300px;
-		margin-top:50px;
-		height: 30px;
-		margin-right: 40px;
-	}
-
-	/* main div area on left side */		
-	#main{
-		height: 500px;
-		background-color: #ffffff;
-		width:650px;
-		float: left;
-		border-color: #dddddd;
-		margin-left:80px;
-		margin-top:20px;
-	}
-	/* copy area inside the main div */
-	#mainbody{
-		padding-top:20px;
-		margin-right: 10px;
-		margin-bottom: 10px;
-		margin-left: 10px;
-		border-top: 2px solid #cccccc;
-
-		}
-	/* sidebar area with social icons side */
-	#sidebar{
-		height:150px;
-		background-color: #ffffff;
-		border-color: #dddddd;
-		width: 270px;
-		float: right;
-		margin-right:70px;
-		margin-top:20px;
-	}
-
-	#sideberbody{
-		
-		border:solid;
-		padding-top:10px;
-		margin-right: 5px;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		border-top: 2px solid #cccccc;
-	}
-	
-	/* attempt to get the  footer to stick to the bottom */
-	#sidebar::after{
-		content:" ";
-		display:block;
-		clear:both;
-	}
-
-	/* botom footer with copyright */
-	#footer{
-		
-		width:100%;
-		position:absolute;
-   		bottom:0;
-		height: 55px;
-		background-color: #666666;
-		border-top: 6px solid #4aaaa5;
-	}
 
 	/* navigation links styling and hover control */
 	ul {
@@ -195,8 +157,94 @@
     	background-color: #ddd;
 	}
 
-    
+	/* main ID container containing all other formatting*/ 
+	#site-container{
+		margin:auto;
+		overflow: hidden;
+		color: #0065bd;
+		width: 960px;
+		min-height: 600px;
+	}
 
+	/* main header ID container formatting*/ 
+	#header{
+		background-color: #ffffff;
+		border-bottom: 2px solid #cccccc;
+		min-height: 80px;
+		
+		
+		}
+	/* container for logo name */ 
+	#logo{
+		margin-top:10px;
+		margin-left:30px;
+		background-color: #4aaaa5;
+		width:200px;
+		height:70px;
+		border-radius: 3px;
+		
+		float: left;
+	}
+	
+	/* navigation ID area for About |Portfolio | Contact */
+	#nav{
+			
+		margin-top:20px;
+		width:270px;
+		top:50%;
+		right:10%;
+		float:right;
+	}
+
+	/* section ID container control on left side */		
+	#section{
+		margin-top:30px;
+		margin-left:30px;
+		background-color: #ffffff;
+		width:650px;
+		float:left;
+		position:relative;
+		min-height: 600px;
+		margin-bottom: 50px;
+
+		
+	}
+	/* article ID container area with image and text */
+	#article{
+				
+		position:absolute;
+		margin-left: 20px;
+		margin-right:20px;
+		margin-top:20px;
+		
+		
+			
+	}
+	
+	/* sidebar ID container area with social icons side */
+	#sidebar{
+		margin-top:30px;
+		height:150px;
+		background-color: #ffffff;
+		border-color: #dddddd;
+		width: 270px;
+		
+		float:right;
+	}
+
+	/* ID element for the bottom footer with copyright */
+	#footer{
+		clear:both;
+		width:100%;
+		bottom:0;
+		min-height: 55px;
+		background-color: #666666;
+		border-top: 6px solid #4aaaa5;
+
+	}
+
+	
+    
 	
 
 
