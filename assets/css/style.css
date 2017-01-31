@@ -117,12 +117,13 @@
 
 	/* main class container containing for the main boundary*/ 
 	.site-container{
-		margin:auto;
+		margin: 30px auto 85px auto;
 		overflow: hidden;
 		color: #0065bd;
 		width: 960px;
 		height:auto;
-		margin-top:30px;
+		
+
 	}
 
 	/* main header styles container formatting*/ 
@@ -161,7 +162,7 @@
 		background-color: #ffffff;
 		width:650px;
 		float:left;
-		min-height:600px;
+		
 		position:relative;
 		border:1px solid #dddddd;
 		border-radius: 10px;
@@ -262,8 +263,11 @@
 	
 	.portfolio{
 		width:610px;
-		height:auto;
-		margin:20px;
+		height: auto;
+		margin: 20px;
+		margin-left:60px;
+		
+		
 		
 	}
 
